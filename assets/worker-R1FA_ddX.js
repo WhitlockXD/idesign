@@ -1,0 +1,1 @@
+const e=import(`./engine-2iiHwnIB.js`);e.catch(()=>{});const t=globalThis;t.onmessage=async({data:n})=>{try{let{calculateLayout:r}=await e;t.postMessage(r(n))}catch(e){t.postMessage({revision:n.revision,error:e instanceof Error?e.message:String(e)})}};
